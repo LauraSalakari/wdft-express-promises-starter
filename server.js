@@ -8,11 +8,6 @@ let hbs = require('hbs');
 // because we installed the 'dotenv' package
 const PORT = process.env.PORT
 
-//------------Do not uncomment this----------
-// app.use(bodyParser.json())
-// app.use(bodyParser.urlencoded({extended: true}))
-//-------------------------------------------
-
 //-----Assume this is some library set up----------
 
 // a function that returns a promise 
