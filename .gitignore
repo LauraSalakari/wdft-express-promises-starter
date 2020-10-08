@@ -1,0 +1,7 @@
+node_modules
+
+
+# we never commit the .env file
+# we are doing it only for learning purposes
+
+#.env
