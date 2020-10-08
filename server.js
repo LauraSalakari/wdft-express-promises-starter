@@ -14,6 +14,8 @@ const PORT = process.env.PORT
 //-------------------------------------------
 
 //-----Assume this is some library set up----------
+
+// a function that returns a promise 
 function getStudents(){
     let myPromise = new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -21,6 +23,18 @@ function getStudents(){
             let data = require('./dataStore')
             resolve(data)
         }, 3000)
+    })
+    return myPromise
+}
+
+function getCountries(){
+    let myPromise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            // assume it fetches data from a database
+            let data = require('./dataStore')
+            let countries = data.map((obj) => obj.countries)
+            resolve(countries)
+        }, 2000)
     })
     return myPromise
 }
